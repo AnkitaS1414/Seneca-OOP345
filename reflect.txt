@@ -1,0 +1,29 @@
+/***********************************************************************
+// OOP345 Workshop #1 lab
+//
+// File  reflect.txt
+// Name- -Ankita
+// Email- ankita8@myseneca.ca
+// Student ID- 169726213
+// Date- 29/01/2024
+
+// Citation:
+
+//  I have done all the coding by myself and only copied the code that my professor provided to complete my workshops and assignments.
+***********************************************************************/
+
+
+Reflection:
+
+During this workshop, I gained hands-on experience in handling command line arguments, discovering for the first time that arguments can be utilized in the main function. Additionally, I deepened my understanding of the distinction between external and internal linkage.
+
+For external linkage, the "extern" keyword facilitates the connection of variables across different scopes and modules. For instance, in my "event.h" file, I declared a variable using "extern unsigned int g_sysClock;" and defined the same-named variable in another file "event.cpp": "unsigned int g_sysClock = 0." This approach allows me to access the variable in various modules, including the "main.cpp" file.
+
+Conversely, internal linkage, indicated by the "static" keyword, enables the connection of variables within the same module but different scopes. In the display function, I applied this concept by declaring "static unsigned int counter = 0," ensuring that the "counter" variable retains its state across function calls.
+
+Regarding the enhancements made to the event class, I opted for dynamic memory allocation ("char* description = nullptr;") to accommodate strings of varying lengths instead of assigning a fixed length ("char description[128];"). To prevent memory leaks, I introduced essential functions such as a copy constructor (Event(const Event&)), a destructor (~Event()), and a copy assignment operator function (Event& operator=(const Event&)).
+
+
+
+
+
